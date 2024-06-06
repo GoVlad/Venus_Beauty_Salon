@@ -690,7 +690,7 @@ li {
     }
 
     .despre-main {
-        min-height: 180em;
+        min-height: 280vh;
     }
 
     .despre {
@@ -698,7 +698,7 @@ li {
     }
 
     .servicii-main {
-        min-height: 120em;
+        min-height: 220vh;
     }
 
     .servicii-chenar {
