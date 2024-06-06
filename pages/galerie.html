@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venus Beaty Salon - Galerie</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="icon" href="../img/logo.jpg" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html" class="beauty-a-1">Venus</a>
+        <nav class="nav">
+            <a href="despre.html">Despre noi</a>
+            <a href="servicii.html">Servicii</a>
+            <a href="../index.html" class="beauty-a">Venus</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="contacte.html">Contacte</a>
+        </nav>
+        <i id="hamburger" class="fa-solid fa-bars"></i>
+    </header>
+    <main>
+
+        <div class="imageWrapper" id="wrapper">
+            <img src="h1.jpg" id="fullImg">
+            <span id="closeBtn">x</span>
+        </div>
+        <section>
+            <h1 class="denumire center translate" data-lang-key="coafuri"><b>Coafuri</b></h1>
+
+            <br />
+            <div class="coafuri">
+                <img class="galery-photo" src="../img/h1.jpg">
+
+
+                <img class="galery-photo" src="../img/h2.jpg">
+
+
+                <img class="galery-photo" src="../img/h3.jpg">
+
+
+                <img class="galery-photo" src="../img/h4.jpg">
+
+
+                <img class="galery-photo" src="../img/h5.jpg">
+
+
+                <img class="galery-photo" src="../img/h6.jpg">
+
+
+                <img class="galery-photo" src="../img/h7.jpg">
+
+
+                <img class="galery-photo" src="../img/h8.jpg">
+
+            </div>
+
+            <h1 class="denumire center translate" data-lang-key="manichiura-2"><b>Manichiură</b></h1> <br />
+
+            <div class="manichiura">
+
+                <img class="galery-photo" src="../img/m1.jpg">
+
+
+                <img class="galery-photo" src="../img/m2.jpg">
+
+
+                <img class="galery-photo" src="../img/m3.jpg">
+
+
+                <img class="galery-photo" src="../img/m4.jpg">
+
+
+                <img class="galery-photo" src="../img/m5.jpg">
+
+
+                <img class="galery-photo" src="../img/m6.jpg">
+
+
+                <img class="galery-photo" src="../img/m7.jpg">
+
+
+                <img class="galery-photo" src="../img/m8.jpg">
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="futersetings">
+            <h1 class="setari translate" data-lang-key="setari">Setări</h1>
+            <div class="tema">
+                <h2 class="translate" data-lang-key="tema">Temă:</h2>
+                <button onclick="changeStyle()" class="buton-style"><span id="themeText">Light</span><img
+                        src="../img/angel.png" alt="ChangeImage" id="icon"></button>
+            </div>
+            <div class="language-switcher">
+                <h2 class="translate" data-lang-key="limba">Limbă:</h2>
+                <select id="languageSelect" onchange="changeLanguage()">
+                    <option value="ro">Română</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>© 2023 Venus Beauty Salon. All rights reserved.</span>
+        </div>
+    </footer>
+</body>
+
+</html>

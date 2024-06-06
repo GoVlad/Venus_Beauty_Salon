@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venus Beaty Salon - Contacte</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="icon" href="../img/logo.jpg" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html" class="beauty-a-1">Venus</a>
+        <nav class="nav">
+            <a href="despre.html">Despre noi</a>
+            <a href="servicii.html">Servicii</a>
+            <a href="../index.html" class="beauty-a">Venus</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="contacte.html">Contacte</a>
+        </nav>
+        <i id="hamburger" class="fa-solid fa-bars"></i>
+    </header>
+    <main class="contacte-main">
+        <section class="chenar-contact">
+            <h1 class="denumire center translate" data-lang-key="contacte">Contacte</h1>
+
+            <div class="row">
+                <div class="col-50">
+                    <div class="contact-cform">
+                        <div class="contacte">
+                            <h2 class="center translate" data-lang-key="date-contact">Date de contact</h2>
+                            <b>&#128388 Gmail:</b>
+                            <a href="mailto:aliona9321@gmail.com">aliona9321@gmail.com</a>
+                            <br /><br />
+
+                            <b>&#9743</b><b class="translate" data-lang-key="mobil">Nr. de mobil:</b>
+                            <a href="tel:069617009">069617009</a>
+                            <br /><br />
+
+                            <b>&#128226</b><b class="translate" data-lang-key="adresa">Adresa:</b>
+                            <a>str. 31 August nr. 41</a>
+                            <br /> <br />
+
+                            <b>&#127760 Facebook:</b>
+                            <a target="_blank"
+                                href="https://www.facebook.com/aliona.craciun.5?locale=ro_RO">aliona.craciun.com</a>
+                            <br /><br />
+
+                            <b>&#127760 Facebook:</b>
+                            <a target="_blank"
+                                href="https://www.facebook.com/liudka.visinschii?locale=ro_RO">liudka.visinschii.com</a>
+                            <br /><br />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-50">
+                    <form class="cform" action="https://formspree.io/f/xoqgwabw" method="POST">
+                        <h2 class="center translate" data-lang-key="program">Programează-te!</h2>
+                        <div class="input-container">
+                            <input type="text" placeholder="Email" name="email" onkeyup="validateEmail()">
+                            <span class="feedback"></span>
+                        </div>
+                        <input type="text" placeholder="Subiectul/Subject" name="subject">
+                        <textarea role="5" placeholder="Mesajul/Mesage" name="message"></textarea>
+                        <input type="submit" value="Transmit">
+                    </form>
+                </div>
+            <div class="col-50">
+                <form class="charta">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d687.5185815479692!2d28.438575761673043!3d46.42740635197607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c9e3616bee12fb%3A0x901cafeb832113d6!2sCasa%20de%20Cultur%C4%83%20Iargara!5e0!3m2!1sen!2s!4v1707843187340!5m2!1sen!2s"
+                        style="border:0;" allowfullscreen="" loading="async" class="harta"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </form>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="futersetings">
+            <h1 class="setari translate" data-lang-key="setari">Setări</h1>
+            <div class="tema">
+                <h2 class="translate" data-lang-key="tema">Temă:</h2>
+                <button onclick="changeStyle()" class="buton-style"><span id="themeText">Light</span><img
+                        src="../img/angel.png" alt="ChangeImage" id="icon"></button>
+            </div>
+            <div class="language-switcher">
+                <h2 class="translate" data-lang-key="limba">Limbă:</h2>
+                <select id="languageSelect" onchange="changeLanguage()">
+                    <option value="ro">Română</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>© 2023 Venus Beauty Salon. All rights reserved.</span>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venus Beauty Salon - Servicii</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="icon" href="../img/logo.jpg" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html" class="beauty-a-1">Venus</a>
+        <nav class="nav">
+            <a href="despre.html">Despre noi</a>
+            <a href="servicii.html">Servicii</a>
+            <a href="../index.html" class="beauty-a">Venus</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="contacte.html">Contacte</a>
+        </nav>
+        <i id="hamburger" class="fa-solid fa-bars"></i>
+    </header>
+
+    <main class="servicii-main">
+        <section class="servicii-chenar">
+            <h1 class="center denumire translate" data-lang-key="servicii">Servicii</h1>
+            <h1 class="serviciile translate" data-lang-key="cosmetologie">Cosmetologie:</h1>
+            <ul>
+                <li class="translate" data-lang-key="cercei">găuri în urechi cu cercei medicinali la copii și adulți;
+                </li>
+                <li class="translate" data-lang-key="bijuterii">bijuterii din aur medicinal: Xuping;</li>
+            </ul>
+
+            <h1 class="serviciile translate" data-lang-key="tunsori">Tunsori:</h1>
+            <ul>
+                <li class="translate" data-lang-key="femei">femei - de la 90 lei;</li>
+                <li class="translate" data-lang-key="barbati">bărbați - 80 lei;</li>
+                <li class="translate" data-lang-key="copii">copii - 80 lei.</li>
+            </ul>
+
+
+            <h1 class="serviciile translate" data-lang-key="indreptare">Îndreptarea părului cu keratină:</h1>
+            <p class="translate" data-lang-key="p-1">Îndreptarea părului cu keratină este o procedură care nu numai că
+                favorizează îndreptarea părului, dar
+                contribuie și la sănătate, la regenerarea fiecărui fir de păr, inclusiv a celui deteriorat și
+                decolorat (este o modificare temporară a structurii părului cu formule speciale cu un conținut ridicat
+                de fibre proteice keratinice). De regulă, keratina pentru îndreptarea părului este sintetică, și nu de
+                origine animală.
+            </p>
+
+            <h1 class="serviciile translate" data-lang-key="procedura">Acestă procedură de salon se potrivește:</h1>
+            <ul>
+                <li class="translate" data-lang-key="imblanzire">pentru a îmblânzi părul indisciplinat și încrețit;</li>
+                <li class="translate" data-lang-key="ingrosare">pentru îngroșarea și sporirea volumului șuvitelor
+                    subțiri;</li>
+                <li class="translate" data-lang-key="aspect">pentru a crea un aspect bine îngrijit oricărui păr.</li>
+            </ul>
+
+            <h1 class="serviciile translate" data-lang-key="tratament">Tratament cu botox pentru păr:</h1>
+            <p class="translate" data-lang-key="p-2">Ca și orice alt tratament, tratamentul părului cu botox are ca scop
+                menținerea sănătații părului prin reducerea cantității de transpirație produsă de scalp. În urma
+                tratamentului se micșorează îngrășarea rapidă a părului și pierderea volumului părului, legată de
+                excesul de sebum.</p>
+
+            <h1 class="serviciile translate" data-lang-key="manichiura">Manichiură:</h1>
+            <ul>
+                <li class="translate" data-lang-key="alungire">alungirea unghiilor - de la 300 lei;</li>
+                <li class="translate" data-lang-key="corectie">corecția - de la 250 lei;</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="futersetings">
+            <h1 class="setari translate" data-lang-key="setari">Setări</h1>
+            <div class="tema">
+                <h2 class="translate" data-lang-key="tema">Temă:</h2>
+                <button onclick="changeStyle()" class="buton-style"><span id="themeText">Light</span><img
+                        src="../img/angel.png" alt="ChangeImage" id="icon"></button>
+            </div>
+            <div class="language-switcher">
+                <h2 class="translate" data-lang-key="limba">Limbă:</h2>
+                <select id="languageSelect" onchange="changeLanguage()">
+                    <option value="ro">Română</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>© 2023 Venus Beauty Salon. All rights reserved.</span>
+        </div>
+    </footer>
+</body>
+
+</html>

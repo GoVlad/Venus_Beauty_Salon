@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venus Beaty Salon - Despre noi</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="icon" href="../img/logo.jpg" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html" class="beauty-a-1">Venus</a>
+        <nav class="nav">
+            <a href="despre.html">Despre noi</a>
+            <a href="servicii.html">Servicii</a>
+            <a href="../index.html" class="beauty-a">Venus</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="contacte.html">Contacte</a>
+        </nav>
+        <i id="hamburger" class="fa-solid fa-bars"></i>
+    </header>
+
+    <main class="despre-main">
+        <section class="despre">
+            <div class="info-noi">
+                <h1 class="denumire center translate" data-lang-key="despre">Despre noi</h1>
+                <p class="translate" data-lang-key="p1-1">În prezentarea noastră, vreau să ne concentrăm pe ideea
+                    deschiderii beauty salon în Iargara și modul
+                    în care ne putem diferenția prin oferirea serviciilor de calitate și o experiență unică pentru
+                    clienți.
+                    Numele salonului nostru este <span class="decor">Beauty Salon</span> care ne reprezintă și
+                    reflectă pasiunea noastră pentru
+                    frumusețe și îngrijirea podoabei capilare.
+                </p>
+
+                <img src="../img/foto-despre-1.jpg" alt="fotografie" class="despre-foto">
+
+                <p class="translate" data-lang-key="p1-2">Pentru început, am deschis afacerea individuală într-un spațiu
+                    ce se află într-o zonă bine
+                    poziționată în Iargara, care să fie ușor accesibil pentru clienți.
+                    Pentru a fi competitive pe piață, trebuie să ne asigurăm că oferim servicii de calitate. Pentru
+                    aceasta, putem asigura serviciile noastre și bunele abilități de comunicare. De asemenea, vom
+                    investi în
+                    echipament și produse de înaltă calitate pentru a obține rezultate impecabile.
+                </p>
+
+                <img src="../img/foto-despre-2.jpg" alt="fotografie" class="despre-foto">
+
+                <p class="translate" data-lang-key="p1-3">Un alt aspect important este crearea unei atmosfere plăcute și
+                    relaxante în salon. Am ales o tematică
+                    elegantă și modernă pentru decor, cu accente de culoare și mobilier confortabil.
+                    De asemenea, ar trebui să promovăm serviciile noastre în mod eficient. Și am ales să creăm site-ul
+                    sau o pagină de social media pentru salonul nostru, unde putem expune fotografii cu tunsorile
+                    realizate și
+                    să oferim servicii de îngrijire a părului.
+                    Un factor cheie în succesul nostru va fi relația strânsă și cadrul de lucru bazat pe încredere cu
+                    clienții noștri. Vom încerca să ne construim o bază solidă de clienți fideli, oferindu-le o atenție
+                    personalizată și servicii impecabile.
+                </p>
+
+                <img src="../img/foto-despre-3.png" alt="fotografie" class="despre-foto">
+
+                <p class="translate" data-lang-key="p1-4">În final, deschiderea unui Beauty Salon în Iargara reprezintă
+                    o oportunitate fantastică de a aduce
+                    pasiunea noastră pentru tuns până la un alt nivel și de a avea succes într-o afacere proprie. Cu
+                    angajament,
+                    dedicație și o atenție deosebită la detalii, suntem sigure că salonul nostru va deveni o destinație
+                    de frumusețe preferată în Iargara.
+                    Ne dorim succes în inițiativa noastră și să ne îndeplinim visele de a avea propriul Beauty Salon!
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="futersetings">
+            <h1 class="setari translate" data-lang-key="setari">Setări</h1>
+            <div class="tema">
+                <h2 class="translate" data-lang-key="tema">Temă:</h2>
+                <button onclick="changeStyle()" class="buton-style"><span id="themeText">Light</span><img
+                        src="../img/angel.png" alt="ChangeImage" id="icon"></button>
+            </div>
+            <div class="language-switcher">
+                <h2 class="translate" data-lang-key="limba">Limbă:</h2>
+                <select id="languageSelect" onchange="changeLanguage()">
+                    <option value="ro">Română</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>© 2023 Venus Beauty Salon. All rights reserved.</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

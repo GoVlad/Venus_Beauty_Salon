@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venus Beauty Salon - Acasă</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="icon" href="img/logo.jpg" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/script-home.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="beauty-a-1">Venus</a>
+        <nav class="nav">
+            <a href="pages/despre.html" class="translate" data-lang-key="despre-link">Despre noi</a>
+            <a href="pages/servicii.html">Servicii</a>
+            <a href="index.html" class="beauty-a">Venus</a>
+            <a href="pages/galerie.html">Galerie</a>
+            <a href="pages/contacte.html">Contacte</a>
+        </nav>
+        <i id="hamburger" class="fa-solid fa-bars"></i>
+    </header>
+    <main class="acasa">
+        <div>
+            <img src="img/sase.jpg" class="slogan" id="banner">
+        </div>
+        <div class="info-general">
+            <div class="fondatori">
+                <h1 class="center translate" data-lang-key="fondatori">Fondatori</h1>
+                <ul class="acasa-info">
+                    <li>Craciun Aliona</li>
+                    <li>Arpentin Ludmila</li>
+                </ul>
+            </div>
+            <div class="program">
+                <h1 class="center translate" data-lang-key="program-lucru">Program de lucru</h1>
+                <ul class="acasa-info">
+                    <li class="translate" data-lang-key="luni">Luni - 09:00 - 16:00</li>
+                    <li class="translate" data-lang-key="marti">Marți - 09:00 - 16:00</li>
+                    <li class="translate" data-lang-key="miercuri">Miercuri - 09:00 - 16:00</li>
+                    <li class="translate" data-lang-key="joi">Joi - 09:00 - 16:00</li>
+                    <li class="translate" data-lang-key="vineri">Vineri - 09:00 - 16:00</li>
+                    <li class="translate" data-lang-key="sambata">Sâmbătă - zi de odihnă</li>
+                    <li class="translate" data-lang-key="duminica">Duminică - zi de odihnă</li>
+                </ul>
+            </div>
+            <div class="servicii translate">
+                <h1 class="center translate" data-lang-key="servicii">Servicii</h1>
+                <ul class="acasa-info">
+                    <li class="translate" data-lang-key="cosmetologie">Cosmetologie</li>
+                    <li class="translate" data-lang-key="tunsori">Tunsori</li>
+                    <li class="translate" data-lang-key="indreptare">Îndreptarea părului</li>
+                    <li class="translate" data-lang-key="tratament">Tratament pentru păr</li>
+                    <li class="translate" data-lang-key="alungire">Alungirea/corecția unghiilor</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="futersetings">
+            <h1 class="setari translate" data-lang-key="setari">Setări</h1>
+            <div class="tema">
+                <h2 class="translate" data-lang-key="tema">Temă:</h2>
+                <button onclick="changeStyle()" class="buton-style"><span id="themeText">Light</span><img
+                        src="img/angel.png" alt="ChangeImage" id="icon"></button>
+            </div>
+            <div class="language-switcher">
+                <h2 class="translate" data-lang-key="limba">Limbă:</h2>
+                <select id="languageSelect" onchange="changeLanguage()">
+                    <option value="ro">Română</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>© 2023 Venus Beauty Salon. All rights reserved.</span>
+        </div>
+    </footer>
+</body>
+
+</html>

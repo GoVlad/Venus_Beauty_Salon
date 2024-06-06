@@ -1,0 +1,789 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ibarra+Real+Nova&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Noto Serif', serif;
+}
+
+header {
+    background: linear-gradient(to right, rgb(245, 178, 195), rgb(243, 229, 228));
+    text-align: center;
+    height: 55px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+nav a {
+    font-size: 25px;
+    color: white;
+    font-family: 'Century Gothic';
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 1.5s;
+}
+
+nav .beauty-a {
+    font-size: 40px;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    margin-right: 45vh;
+    margin-left: 45vh;
+}
+
+.beauty-a-1 {
+    display: none;
+}
+
+nav a:hover {
+    text-shadow: 0.5px 0.5px 0.5px pink;
+    color: beige;
+}
+
+.slogan {
+    width: 100%;
+    height: 550px;
+}
+
+main {
+    min-height: 125vh;
+    width: 100%;
+}
+
+
+footer {
+    background: linear-gradient(to left, rgb(245, 178, 195), rgb(243, 229, 228));
+    height: 200px;
+    width: 100%;
+}
+
+footer span {
+    color: white;
+    font-size: 14px;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+}
+
+p {
+    line-height: 150%;
+    text-indent: 45px;
+}
+
+
+p::first-letter {
+    font-size: 35px;
+}
+
+.center {
+    text-align: center;
+}
+
+.coafuri,
+.manichiura {
+    margin-top: 20px;
+    width: 100%;
+    height: 155vh;
+    border: 4px solid black;
+    border-width: 80%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    border-radius: 30px;
+    box-shadow: 10px 3px 10px 3px rgb(245, 178, 195);
+}
+
+.galery-photo {
+    width: 240px;
+    height: 290px;
+    transition: all 1s;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.galery-photo:hover {
+    filter: contrast(135%) drop-shadow(4px 3px 5px rgb(245, 178, 195));
+    border-radius: 30px;
+    transform: translateX(-5px) scale(1.1);
+}
+
+.imageWrapper {
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.imageWrapper img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+
+.imageWrapper #closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 35px;
+    color: white;
+    font-family: sans-serif, 'Century Gothic';
+    cursor: pointer;
+}
+
+.denumire {
+    font-size: 300%;
+    font-family: 'Century Gothic';
+    color: rgb(245, 178, 195);
+}
+
+.info-noi {
+    font-size: 24px;
+}
+
+section {
+    padding: 75px 15%;
+}
+
+.row {
+    overflow: auto;
+}
+
+::selection {
+    background-color: pink;
+    color: white;
+}
+
+
+[class^="col-50"] {
+    float: left;
+    padding: 0px 10px;
+}
+
+
+.col-50 {
+    width: 50%;
+}
+
+.contacte,
+.cform,
+.charta {
+    border: 1px solid rgb(245, 178, 195);
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px 5%;
+    height: 380px;
+    margin-bottom: 25px;
+    box-shadow: 4px 3px 5px rgb(245, 178, 195);
+    width: 100%;
+}
+
+.charta {
+    width: 205%;
+}
+
+.harta {
+    width: 100%;
+    height: 100%;
+}
+
+.contacte b {
+    font-size: 22px;
+}
+
+.contacte a {
+    font-size: 20px;
+    text-decoration: underline;
+    color: rgb(245, 178, 195);
+}
+
+.contacte h1,
+.cform h1 {
+    font-size: 75px;
+    font-family: sans-serif;
+    color: rgb(245, 178, 195);
+    padding: 15px 15%;
+}
+
+.contacte h2,
+.cform h2 {
+    font-size: 30px;
+    font-family: sans-serif;
+    color: rgb(245, 178, 195);
+    padding-bottom: 20px;
+}
+
+.contacte-main {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 180vh;
+}
+
+.cform input,
+.cform textarea {
+    width: 100%;
+    font-size: 15px;
+    font-family: inherit;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+}
+
+.chenar-contact {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    height: 160vh;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 4px 3px 5px rgb(245, 178, 195);
+}
+
+.contact-cform {
+    display: flex;
+    margin: 0px;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container input {
+    padding-right: 30px;
+}
+
+.input-container .feedback {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.input-container.valid-email .feedback {
+    display: inline-block !important;
+    position: absolute;
+    right: 5px;
+    top: 40%;
+    line-height: 1; 
+}
+
+.input-container.invalid-email .feedback {
+    display: inline-block !important;
+    position: absolute;
+    right: 5px;
+    top: 40%;
+    line-height: 1; 
+}
+
+.input-container.valid-email .feedback::after {
+    content: '✔️';
+    color: green !important;
+    display: inline-block;
+}
+
+.input-container.invalid-email .feedback::after {
+    content: '❌';
+    color: red !important;
+    display: inline-block;
+    top: 20%;
+}
+
+.despre-main {
+    height: 350vh;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.despre {
+    border: 3px solid black;
+    width: 80%;
+    margin: 2% 0% 2% 0%;
+    border-radius: 15px;
+    box-shadow: 4px 3px 5px rgb(245, 178, 195);
+}
+
+.despre-foto {
+    width: 100%;
+    height: 25%;
+    border: 2px solid black;
+    box-shadow: 4px 3px 5px rgb(245, 178, 195);
+}
+
+.servicii-main {
+    margin: 0;
+    min-height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviciile {
+    font-size: 28px;
+}
+
+.servicii-chenar {
+    border: 3px solid black;
+    width: 70%;
+    height: 100%;
+    margin: 2% 0% 2% 0%;
+    border-radius: 15px;
+    box-shadow: 4px 3px 5px rgb(245, 178, 195);
+}
+
+.servicii,
+p {
+    font-size: 20px;
+}
+
+.servicii,
+li {
+    font-size: 20px;
+}
+
+.info-general {
+    margin: 1px;
+    display: flex;
+    align-items: left;
+}
+
+.fondatori,
+.program,
+.servicii {
+    border: 1px solid black;
+    width: 25%;
+    margin: 2% 0% 2% 0%;
+    border-radius: 15px;
+    box-shadow: 4px 3px 5px rgb(245, 178, 195);
+    margin-left: 6%;
+    height: 300px;
+}
+
+.fondatori h1,
+.program h1,
+.servicii h1 {
+    font-family: sans-serif;
+    color: rgb(245, 178, 195);
+    font-size: 35px;
+}
+
+.acasa-info {
+    color: black;
+    font-size: 20px;
+    font-family: 'Times New Roman';
+}
+
+#hamburger {
+    color: rgb(28, 27, 27);
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.futersetings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.language-switcher h2 {
+    color: white;
+    font-family: 'Century Gothic';
+    font-size: 20px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+#languageSelect {
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#languageSelect:hover {
+    box-shadow: 2px 2px 2px white;
+}
+
+#languageSelect option {
+    background-color: rgb(245, 178, 195);
+}
+
+.setari {
+    color: white;
+    font-family: 'Century Gothic';
+    margin: 15px;
+}
+
+.tema {
+    display: flex;
+    align-items: center;
+}
+
+.tema h2 {
+    color: white;
+    font-family: 'Century Gothic';
+    font-size: 20px;
+    margin: 0;
+    margin-right: 15px;
+}
+
+#themeText {
+    font-size: 20px;
+    margin-right: 8px;
+    margin-left: 2px;
+}
+
+.buton-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.5s;
+}
+
+.buton-style:hover {
+    box-shadow: 2px 2px 2px white;
+}
+
+.buton-style img {
+    width: 40px;
+    height: auto;
+    margin-left: 5px; 
+}
+
+.buton-style span {
+    font-size: 16px;
+    font-family: 'Century Gothic';
+    color: white;
+}
+
+.copyright {
+    border-top: 2px solid white;
+    padding-top: 5px;
+    align-items: center;
+    text-align: center;
+}
+
+.body-night {
+    background-color: rgb(11, 2, 4);
+    color: white;
+}
+
+.body-night ul {
+    color: white;
+}
+
+.body-night header {
+    background: linear-gradient(to right, rgb(72, 12, 25), rgb(53, 12, 25));
+}
+
+.body-night footer {
+    background: linear-gradient(to left, rgb(72, 12, 25), rgb(53, 12, 25));
+}
+
+.body-night h1 {
+    color: rgb(164, 12, 25);
+}
+
+.body-night .servicii,
+.body-night .program,
+.body-night .fondatori {
+    box-shadow: 4px 3px 5px rgb(164, 12, 25);
+    border: 1px solid rgb(164, 12, 25);
+}
+
+.body-night #hamburger {
+    color: white;
+}
+
+.body-night .coafuri,
+.body-night .manichiura,
+.body-night .servicii-chenar,
+.body-night .despre {
+    box-shadow: 4px 3px 5px rgb(164, 12, 25);
+    border: 2px solid rgb(164, 12, 25);
+}
+
+.body-night .galery-photo,
+.body-night .galery-photo:hover,
+.body-night .despre-foto {
+    box-shadow: 4px 3px 5px rgb(164, 12, 25);
+}
+
+.body-night .chenar-contact {
+    background-color: black;
+    width: 90%;
+    height: 160vh;
+    border: 2px solid rgb(164, 12, 25);
+    border-radius: 20px;
+    box-shadow: 4px 3px 5px rgb(164, 12, 25);
+}
+
+.body-night .contacte,
+.body-night .cform,
+.body-night .charta {
+    border: 1px solid rgb(164, 12, 25);
+    border-radius: 5px;
+    background-color: black;
+    padding: 5px 5%;
+    height: 380px;
+    margin-bottom: 25px;
+    box-shadow: 4px 3px 5px rgb(164, 12, 25);
+    width: 100%;
+}
+
+.body-night .charta {
+    width: 205%;
+}
+
+.body-night .contacte a,
+.body-night .contacte h2,
+.body-night .cform h2 {
+    color: rgb(164, 12, 25);
+}
+
+.body-night ::selection {
+    background-color: rgb(164, 12, 25);
+}
+
+.body-night #languageSelect option {
+    background-color: rgb(164, 12, 25);
+}
+
+@media (max-width: 400px) {
+    body p,
+    body li,
+    body b,
+    body a{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .slogan {
+        margin-top: 40px;
+        height: 175px;
+    }
+
+    .coafuri,
+    .manichiura {
+        height: 150vh;
+    }
+
+    .galery-photo {
+        width: 140px;
+        height: 170px;
+    }
+
+    section {
+        padding: 90px 10px;
+    }
+
+    .vframe {
+        height: 55vw;
+    }
+
+    [class^="col-"] {
+        width: 100% !important;
+    }
+
+    header {
+        height: 45px;
+        border-bottom: white;
+        border-bottom: 1px solid white;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav.mobile {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 30vh;
+        position: fixed;
+        top: 45px;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(to right, rgb(245, 178, 195), rgb(243, 229, 228));
+        z-index: 1;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .body-night .nav.mobile {
+        background: linear-gradient(to right, rgb(72, 12, 25), rgb(53, 12, 25));
+    }
+
+    .nav.mobile a {
+        padding: 15px 0;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+        text-align: center;
+    }
+
+    .beauty-a-1 {
+        display: block;
+        font-size: 35px;
+        width: 25%;
+        font-family: 'Dancing Script', cursive;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        margin-left: 36%;
+    }
+
+    .nav.mobile .beauty-a {
+        display: none;
+    }
+
+    .nav.mobile a:first-child,
+    .nav.mobile a:nth-child(2) {
+        margin-top: 15px;
+    }
+
+    .nav.mobile a:last-child {
+        border-bottom: none;
+    }
+
+    .despre-main {
+        min-height: 380vh;
+    }
+
+    .servicii-main {
+        min-height: 280vh;
+    }
+
+    .contacte-main {
+        min-height: 150vh;
+    }
+
+    .chenar-contact {
+        height: 130vh;
+    }
+
+    .body-night .chenar-contact {
+        height: 130vh;
+    }
+
+    .contacte-main .denumire {
+        font-size: 28px;
+    }
+
+    .contacte,
+    .cform,
+    .charta {
+        width: 100%;
+        height: 250px;
+    }
+
+    .body-night .contacte,
+    .body-night .cform,
+    .body-night .charta {
+        width: 100%;
+        height: 250px;
+    }
+
+    .contacte a,
+    .cform a,
+    .charta a {
+        font-size: 14px;
+    }
+
+    .contacte b,
+    .cform b,
+    .charta b {
+        font-size: 14px;
+    }
+
+    .contacte h2,
+    .cform h2,
+    .charta h2 {
+        font-size: 18px;
+        padding-bottom: 5px;
+    }
+
+    .info-general {
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .info-general h1 {
+        font-size: 20px;
+    }
+
+    .info-general li {
+        font-size: 14px;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    .info-general {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fondatori,
+    .program,
+    .servicii {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .fondatori h1,
+    .program h1,
+    .servicii h1 {
+        font-size: 30px;
+    }
+
+    .fondatori li,
+    .program li,
+    .servicii li {
+        font-size: 20px;
+    }
+}
