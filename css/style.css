@@ -690,11 +690,19 @@ li {
     }
 
     .despre-main {
-        min-height: 380vh;
+        min-height: 180em;
+    }
+
+    .despre {
+        width: 95%;
     }
 
     .servicii-main {
-        min-height: 280vh;
+        min-height: 120em;
+    }
+
+    .servicii-chenar {
+        width: 95%;
     }
 
     .contacte-main {
