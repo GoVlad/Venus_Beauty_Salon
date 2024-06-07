@@ -698,7 +698,7 @@ li {
     }
 
     .servicii-main {
-        min-height: 200vh;
+        height: 200vh;
     }
 
     .servicii-chenar {
